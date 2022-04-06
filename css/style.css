@@ -20,34 +20,13 @@ h1, h2, h3, h4 {
 header {
     display: flex;
 }
-.navbar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: #000;
-    width: 300px;
-    height: calc(100vh - 120px);
-    position: fixed;
-    left: 0;
-}
 .header {
     width: calc(100vw - 300px);
     display: flex;
-    /* height: 120px; */
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
     right: 0;
     justify-content: flex-end;
-}
-
-.navbar-section-user-search img {
-    width: 20px;
-}
-.logo-heaer {
-    width: 150px;
-}
-.user-icon {
-    width: 25px;
 }
 .btn {
     padding: 15px 45px;
@@ -64,9 +43,28 @@ main {
     display: flex;
     justify-content: flex-end;
 }
+/* navbar */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000;
+    width: 300px;
+    height: calc(100vh - 120px);
+}
+.navbar-section-user-search img {
+    width: 20px;
+}
+.logo-heaer {
+    width: 150px;
+}
+.user-icon {
+    width: 25px;
+}
+/* /navbar */
 .container {
     width: calc(100vw - 300px);
-    padding-top: 120px;
+    padding: 120px 20px 0 20px;
 }
 .body-section-navbar {
     display: flex;
@@ -74,6 +72,21 @@ main {
 }
 .navbar-body {
     display: flex;
+}
+/*--------------------------
+    main-recently played 
+--------------------------*/
+.container-recently-played{
+    display: flex;
+    text-align: center;
+}
+.container-recently-played img {
+    width: 100%;
+}
+.artist {
+    width: calc(100% / 6);
+    height: 200px;
+    color: salmon;
 }
 /*---------- 
    footer
