@@ -60,9 +60,19 @@ header {
 /*---------- 
     main 
 ---------- */
+main {
+    display: flex;
+    justify-content: flex-end;
+}
 .container {
-    height: calc(100vh - 240px);
-    overflow-y: auto;
+    display: flex;
+    height: calc(100vh - 120px);
+    width: calc(100vw - 300px);
+    justify-content: center;
+}
+.navbar-body {
+    padding-top: 120px;
+    display: flex;
 }
 /*---------- 
    footer
