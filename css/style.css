@@ -65,13 +65,14 @@ main {
     justify-content: flex-end;
 }
 .container {
-    display: flex;
-    height: calc(100vh - 120px);
     width: calc(100vw - 300px);
+    padding-top: 120px;
+}
+.body-section-navbar {
+    display: flex;
     justify-content: center;
 }
 .navbar-body {
-    padding-top: 120px;
     display: flex;
 }
 /*---------- 
