@@ -23,21 +23,32 @@ header {
     background-color: #000;
     width: 300px;
     height: calc(100vh - 120px);
+    position: fixed;
+    left: 0;
 }
 .header {
     width: calc(100vw - 300px);
     display: flex;
     height: 120px;
-    background-color: #080b12;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    right: 0;
 }
 /*---------- 
     main 
 ---------- */
-
+.container {
+    height: calc(100vh - 240px);
+    overflow-y: auto;
+}
 /*---------- 
    footer
 ---------- */
 .playlist-bar {
     height: 120px;
     background-color: #282828;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
 }
