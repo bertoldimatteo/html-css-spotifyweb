@@ -197,10 +197,24 @@ main {
 }
 .listening, .player-bar, .settings {
     width: calc(100% / 3);
+    display: flex;
+    align-items: center;
+}
+.player-bar {
+    justify-content: center;
+}
+.settings {
+    justify-content: flex-end;
 }
 .bar-progressive, .bar-light, .volume-bar, .volume-bar-light {
     height: 5px;
     border-radius: 2px;
+}
+.listening-name {
+    margin: 0 30px 0 20px;
+}
+.listening i {
+    margin: 0 10px;
 }
 .bar-progressive {
     width: 80%;
@@ -210,8 +224,8 @@ main {
     width: 20%;
     background-color: #c1c1c1;
 }
-.listening img {
-    height: 60%;
+.listening-album {
+    height: 80px;
 }
 .volume-bar {
     width: 30%;
