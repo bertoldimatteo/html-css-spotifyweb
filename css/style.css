@@ -328,11 +328,11 @@ main {
     display: flex;
 }
 .volume-bar {
-    width: 50%;
+    width: 45%;
     background-color: #5a5a5a;
 }
 .volume-bar-light {
-    width: 20%;
+    width: 30%;
     background-color: #c1c1c1;
     position: relative;
 }
@@ -410,4 +410,20 @@ main {
     }
 
 @media screen and (max-width: 600px) {
+    .playlist-bar {
+        padding: 20px 10px;
+    }
+    .listening-name {
+        margin: 0px 5px;
+    }
+    .settings i {
+        padding: 0px 3px;
+    }
+    .listening, .settings {
+        width: 26.5%;
+    }
+    .player-bar {
+        width: calc(47% - 4px);
+        margin: 0 2px;
+    }
 }
