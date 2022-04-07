@@ -105,8 +105,31 @@ main {
 .playlist-bar {
     height: 120px;
     background-color: #282828;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    display: flex;
+}
+.listening, .player-bar, .settings {
+    width: calc(100% / 3);
+}
+.bar-progressive, .bar-light, .volume-bar, .volume-bar-light {
+    height: 5px;
+    border-radius: 2px;
+}
+.bar-progressive {
+    width: 80%;
+    background-color: #5a5a5a;
+}
+.bar-light {
+    width: 20%;
+    background-color: #c1c1c1;
+}
+.listening img {
+    height: 60%;
+}
+.volume-bar {
+    width: 30%;
+    background-color: #5a5a5a;
+}
+.volume-bar-light {
+    width: 20%;
+    background-color: #c1c1c1;
 }
