@@ -136,6 +136,12 @@ main {
     display: flex;
     justify-content: center;
 }
+.navbar-body > * {
+    padding: 0 30px;
+}
+.navbar-body a {
+    text-transform: capitalize;
+}
 .navbar-body, .user-selection {
     display: flex;
 }
@@ -251,14 +257,17 @@ main {
     display: flex;
     padding: 20px;
 }
-.listening, .player-bar, .settings {
-    width: calc(100% / 3);
+.listening, .settings {
+    width: 20%;
     display: flex;
     align-items: center;
 }
 .player-bar {
+    width: 60%;
     justify-content: center;
     flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 .settings {
     justify-content: flex-end;
@@ -282,13 +291,17 @@ main {
     color: #fff;
 }
 .bar-progressive {
-    width: 450px;
+    width: 55%;
     background-color: #5a5a5a;
     display: inline-block;
     vertical-align: middle;
 }
+.player-bar-progressive {
+    width: 100%;
+    text-align: center;
+}
 .player-bar-progressive span {
-    padding: 0 20px;
+    padding: 0 5px;
     color: #fff;
 }
 .bar-light {
@@ -333,4 +346,23 @@ main {
 }
 .bar-light:hover .dot-bar, .volume-bar-light:hover .dot-bar{
     display: block;
+}
+/*------------- 
+  media-query
+-------------*/
+@media screen and (max-width: 1100px) {
+    .navbar-body {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .navbar-body > * {
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 600px) {
 }
