@@ -80,10 +80,15 @@ main {
 .navbar-section-user-search {
     margin-bottom: 20px;
 }
-.navbar-section-logo {
+.logo-intero {
     height: 80px;
     display: flex;
     align-items: center;
+}
+.logo-small {
+    width: 70px;
+    display: none;
+    margin: 22px 0;
 }
 .navbar-section-logo svg {
     width: 50%;
@@ -410,6 +415,15 @@ main {
     }
 
 @media screen and (max-width: 600px) {
+    .logo-intero {
+        display: none;
+    }
+    .logo-small {
+        display: block;
+    }
+    .navbar-section-playlist {
+        display: none;
+    }
     .playlist-bar {
         padding: 20px 10px;
     }
