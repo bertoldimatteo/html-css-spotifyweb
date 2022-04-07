@@ -45,7 +45,7 @@ header {
 ---------- */
 main {
     display: flex;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 100px);
 }
 /* navbar */
 .navbar {
@@ -56,19 +56,54 @@ main {
     width: 300px;
     overflow-y: auto;
 }
-.navbar-section-user-search img {
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+.navbar-section-logo, .navbar-section-user-search, .navbar-section-playlist, .navbar-section-user {
+    padding: 0 10px;
+} 
+.navbar-section-user-search > * {
+    margin-bottom: 10px;
+}
+.navbar-section-user-search {
+    margin-bottom: 20px;
+}
+.navbar-section-logo {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.navbar-section-logo svg {
+    width: 50%;
+}
+.navbar-section-user-search svg, .navbar-section-down svg {
+    width: 10%;
+    vertical-align: middle;
+}
+.navbar-section-playlist ul > *, .navbar-section-playlist h4  {
+    margin-bottom: 20px;
+}
+.playlist-button span {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    text-transform: capitalize;
+}
+.btn1 {
+    vertical-align: middle;
+}
+.circle-arrow {
     width: 20px;
-}
-.logo-heaer {
-    width: 150px;
-}
-.user-icon {
-    width: 25px;
-}
+    height: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+} 
 /* /navbar */
 .container {
     width: calc(100% - 300px);
-    padding: 120px 20px 0 20px;
+    padding: 100px 20px 0 20px;
     overflow-y: auto;
 }
 .navbar-section-down {
@@ -103,7 +138,7 @@ main {
    footer
 ---------- */
 .playlist-bar {
-    height: 120px;
+    height: 100px;
     background-color: #282828;
     display: flex;
 }
