@@ -93,12 +93,12 @@ main {
 .artist img {
     width: 100%;
 }
-/*--------------------------
-     creata-per-user 
---------------------------*/
-/*--------------------------
-     artisti-popolari 
---------------------------*/
+.user-selection {
+    text-align: center;
+}
+.circle-cover img {
+    border-radius: 50%;
+}
 /*---------- 
    footer
 ---------- */
