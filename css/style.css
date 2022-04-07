@@ -191,8 +191,9 @@ main {
 }
 .play-album {
     position: absolute;
-    top: 88px;
-    left: 90px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
     display: none;
     background-color: inherit;
