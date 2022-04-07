@@ -21,12 +21,16 @@ header {
     display: flex;
 }
 .header {
-    width: calc(100vw - 300px);
+    width: calc(100% - 300px);
+    height: 80px;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.4);
     position: fixed;
+    top: 0;
     right: 0;
-    justify-content: flex-end;
+    z-index: 10;
 }
 .btn {
     padding: 15px 45px;
@@ -41,16 +45,16 @@ header {
 ---------- */
 main {
     display: flex;
-    justify-content: flex-end;
+    height: calc(100vh - 120px);
 }
 /* navbar */
 .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    flex-shrink: 0;
     background-color: #000;
     width: 300px;
-    height: calc(100vh - 120px);
+    overflow-y: auto;
 }
 .navbar-section-user-search img {
     width: 20px;
@@ -63,35 +67,38 @@ main {
 }
 /* /navbar */
 .container {
-    width: calc(100vw - 300px);
+    width: calc(100% - 300px);
     padding: 120px 20px 0 20px;
+    overflow-y: auto;
+}
+.navbar-section-down {
+    margin-top: auto;
 }
 .body-section-navbar {
     display: flex;
     justify-content: center;
 }
-.navbar-body {
+.navbar-body, .user-selection {
     display: flex;
 }
 /*--------------------------
-    main-recently played 
+    recently played 
 --------------------------*/
-.container-recently-played{
-    display: flex;
+.recently-played{
     text-align: center;
-}
-.container-recently-played img, .container-creata-per-user img {
-    width: 100%;
 }
 .artist {
     width: calc(100% / 6);
 }
-/*--------------------------
- container-creata-per-user 
---------------------------*/
-.container-creata-per-user {
-    display: flex;
+.artist img {
+    width: 100%;
 }
+/*--------------------------
+     creata-per-user 
+--------------------------*/
+/*--------------------------
+     artisti-popolari 
+--------------------------*/
 /*---------- 
    footer
 ---------- */
