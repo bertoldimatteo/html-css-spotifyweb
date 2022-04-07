@@ -160,7 +160,7 @@ main {
 .icon:hover a {
     color: #fff;
 }
-.navbar-body li:hover a{
+.navbar-body div:hover a{
     color: #fff;
 }
 .navbar-section-playlist li:hover a {
