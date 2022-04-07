@@ -301,6 +301,11 @@ main {
     width: 100%;
     text-align: center;
 }
+.listening-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 .volume-bar-container {
     width: 100%;
     display: flex;
@@ -317,7 +322,10 @@ main {
     position: relative;
 }
 .listening-album {
-    height: 100%;
+    width: 55px;
+}
+.listening-icons {
+    display: flex;
 }
 .volume-bar {
     width: 50%;
@@ -366,6 +374,9 @@ main {
     .navbar-body > * {
         padding-bottom: 10px;
     }
+    .listening-icons {
+        display: flex;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -389,7 +400,14 @@ main {
     .player-bar {
         width: 50%;
     }
-}
+    .listening-name {
+        margin: 0 15px 0 20px;
+    }
+    .listening-icons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
 
 @media screen and (max-width: 600px) {
 }
