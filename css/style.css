@@ -202,6 +202,7 @@ main {
 }
 .player-bar {
     justify-content: center;
+    flex-direction: column;
 }
 .settings {
     justify-content: flex-end;
@@ -216,9 +217,21 @@ main {
 .listening i {
     margin: 0 10px;
 }
+.player-bar-icons {
+    padding-bottom: 10px;
+}
+.player-bar-icons i {
+    vertical-align: middle;
+    padding: 0 15px;
+}
 .bar-progressive {
-    width: 80%;
+    width: 450px;
     background-color: #5a5a5a;
+    display: inline-block;
+    vertical-align: middle;
+}
+.player-bar-progressive span {
+    padding: 0 20px;
 }
 .bar-light {
     width: 20%;
