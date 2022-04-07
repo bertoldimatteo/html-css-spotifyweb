@@ -301,6 +301,12 @@ main {
     width: 100%;
     text-align: center;
 }
+.volume-bar-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .player-bar-progressive span {
     padding: 0 5px;
     color: #fff;
@@ -311,10 +317,10 @@ main {
     position: relative;
 }
 .listening-album {
-    height: 80px;
+    height: 100%;
 }
 .volume-bar {
-    width: 150px;
+    width: 50%;
     background-color: #5a5a5a;
 }
 .volume-bar-light {
@@ -376,6 +382,12 @@ main {
     }
     .artist {
         width: calc(100% / 2 - 20px);
+    }
+    .listening, .settings {
+        width: 25%;
+    }
+    .player-bar {
+        width: 50%;
     }
 }
 
