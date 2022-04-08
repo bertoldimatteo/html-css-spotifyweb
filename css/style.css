@@ -1,6 +1,6 @@
 /*---------- 
    commons 
----------- */
+------------*/
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ a {
 }
 /*---------- 
    header 
----------- */
+------------*/
 header {
     display: flex;
 }
@@ -52,14 +52,14 @@ header {
 }
 /*---------- 
     main 
----------- */
+------------*/
 main {
     display: flex;
     height: calc(100vh - 100px);
 }
 /*----------
    navbar 
- ----------*/
+-----------*/
 .navbar {
     display: flex;
     flex-direction: column;
@@ -76,13 +76,13 @@ main {
 
 /*--------------------
    navbar-section-up 
- --------------------*/
+---------------------*/
  .navbar-section-logo, .navbar-section-playlist, .navbar-section-user {
     padding: 0 20px;
 } 
- /*-------------------
+/*-------------------
   navbar-section-logo 
- --------------------*/
+--------------------*/
 .navbar-section-logo svg {
     width: 50%;
 }
