@@ -146,12 +146,18 @@ main {
 .icon a{
     padding: 0 20px;
 }
+.navbar-section-playlist li:hover a {
+    color: #fff;
+}
+.playlist-button:hover {
+    color: #fff;
+}
 /*-------------------------
   navbar-section-playlist
- -------------------------*/
+--------------------------*/
 /*-------------------------
     navbar-section-down
- -------------------------*/
+--------------------------*/
 .navbar-section-down {
     margin-top: auto;
     margin-bottom: 10px;
@@ -171,6 +177,9 @@ main {
     line-height: 18px;
     vertical-align: middle;
 } 
+.download:hover a {
+    color: #fff;
+}
 .download span{
     font-size: 12px;
 }
@@ -186,7 +195,7 @@ main {
 
 /*------------
    container 
- ------------*/
+-------------*/
 .container {
     width: calc(100% - 300px);
     padding: 100px 20px 0 20px;
@@ -194,8 +203,14 @@ main {
 }
 /*-------------------------
     body-section-navbar
- -------------------------*/
- .body-section-navbar {
+-------------------------*/
+.body-section-navbar ul li {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0 20px;
+    font-size: 14px;
+}
+.body-section-navbar {
     display: flex;
     justify-content: center;
 }
@@ -215,23 +230,17 @@ main {
 .navbar-body div a.active {
     border-bottom: 3px solid lightgreen;
 }
- /*-------------------------
+/*-------------------------
     /body-section-navbar
- -------------------------*/
+-------------------------*/
+/*---------------------
+    music-container
+----------------------*/
 .user-icon {
     width: 25px;
     height: 25px;
     background-color: grey;
     border-radius: 50%
-}
-.navbar-section-playlist li:hover a {
-    color: #fff;
-}
-.playlist-button:hover {
-    color: #fff;
-}
-.download:hover a {
-    color: #fff;
 }
 .cover-album {
     position: relative;
@@ -272,18 +281,6 @@ main {
     background-color: inherit;
     content: ' ';
 }
-/*--------------------------
-    body section navbar 
---------------------------*/
-.body-section-navbar ul li {
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0 20px;
-    font-size: 14px;
-}
-/*--------------------------
-    recently played 
---------------------------*/
 .music-container {
     padding: 30px 0;
 }
@@ -310,9 +307,12 @@ main {
 .circle-cover img {
     border-radius: 50%;
 }
+/*---------------------
+    music-container
+----------------------*/
 /*------------
-   /container 
- ------------*/
+  /container 
+-------------*/
 /*---------- 
    footer
 ---------- */
