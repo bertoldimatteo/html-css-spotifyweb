@@ -106,10 +106,8 @@ main {
     margin-bottom: 10px;
 }
 .navbar-section-user-search {
-    text-align: left;
-}
-.navbar-section-user-search {
     margin-bottom: 20px;
+    text-align: left;
 }
 .navbar-section-user-search svg, .navbar-section-down svg {
     width: 10%;
@@ -242,12 +240,11 @@ main {
     background-color: grey;
     border-radius: 50%
 }
-.cover-album {
+.cover-album-round, .cover-album {
     position: relative;
-    margin-bottom: 20px;
 }
-.cover-album-round {
-    position: relative;
+.cover-album {
+    margin-bottom: 20px;
 }
 .cover-album:hover, .cover-album:hover .play-album {
     background-color: rgba(0, 0, 0, 0.5);
@@ -322,17 +319,17 @@ main {
     display: flex;
     padding: 20px;
 }
-.listening, .settings {
-    width: 22.5%;
+.listening, .player-bar, .settings {
     display: flex;
     align-items: center;
+}
+.listening, .settings {
+    width: 22.5%;
 }
 .player-bar {
     width: 55%;
     justify-content: center;
     flex-direction: column;
-    display: flex;
-    align-items: center;
 }
 .settings {
     justify-content: flex-end;
