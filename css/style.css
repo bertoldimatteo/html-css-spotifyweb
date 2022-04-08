@@ -415,17 +415,44 @@ main {
     }
 
 @media screen and (max-width: 600px) {
+    .navbar {
+        width: 80px;
+    }
+    .header {
+        width: calc(100% - 80px);
+    }
+    .container {
+        width: calc(100% - 80px);
+    }
     .logo-intero {
         display: none;
     }
     .logo-small {
         display: block;
     }
+    .icon span {
+        display: none;
+    }
+    .navbar-section-user-search svg {
+        width: 90%;
+    }
     .navbar-section-playlist {
         display: none;
     }
+    .download {
+        text-align: center;
+    }
+    .navbar-section-down svg {
+        width: 65%;
+    }
+    .navbar-user-account {
+        text-align: center;
+    }
     .playlist-bar {
         padding: 20px 10px;
+    }
+    .navbar-section-user span {
+        display: none;
     }
     .listening-name {
         margin: 0px 5px;
