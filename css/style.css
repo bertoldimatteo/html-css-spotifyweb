@@ -57,7 +57,9 @@ main {
     display: flex;
     height: calc(100vh - 100px);
 }
-/* navbar */
+/*----------
+   navbar 
+ ----------*/
 .navbar {
     display: flex;
     flex-direction: column;
@@ -71,14 +73,18 @@ main {
     color: inherit;
     font-weight: bold;
 }
-.navbar-section-logo, .navbar-section-playlist, .navbar-section-user {
+
+/*--------------------
+   navbar-section-up 
+ --------------------*/
+ .navbar-section-logo, .navbar-section-playlist, .navbar-section-user {
     padding: 0 20px;
 } 
-.navbar-section-user-search > * {
-    margin-bottom: 10px;
-}
-.navbar-section-user-search {
-    margin-bottom: 20px;
+ /*-------------------
+  navbar-section-logo 
+ --------------------*/
+.navbar-section-logo svg {
+    width: 50%;
 }
 .logo-intero {
     height: 80px;
@@ -90,13 +96,41 @@ main {
     display: none;
     margin: 22px 0;
 }
-.navbar-section-logo svg {
-    width: 50%;
+/*---------------------
+  /navbar-section-logo 
+----------------------*/
+/*-------------------------
+  navbar-section-user-search
+-------------------------*/
+.navbar-section-user-search > * {
+    margin-bottom: 10px;
+}
+.navbar-section-user-search {
+    text-align: left;
+}
+.navbar-section-user-search {
+    margin-bottom: 20px;
 }
 .navbar-section-user-search svg, .navbar-section-down svg {
     width: 10%;
     vertical-align: middle;
 }
+.icon span {
+    padding-left: 10px;
+}
+.navbar-section-user-search div:hover {
+    color: #fff;
+    border-left: 3px solid lightgreen;
+}
+.navbar-section-user-search div.active {
+    border-left: 3px solid lightgreen;
+}
+/*--------------------------
+ /navbar-section-user-search
+---------------------------*/
+/*-------------------------
+  navbar-section-playlist
+---------------------------*/
 .navbar-section-playlist ul > *, .navbar-section-playlist h4  {
     margin-bottom: 20px;
 }
@@ -109,24 +143,15 @@ main {
 .btn1 {
     vertical-align: middle;
 }
-.circle-arrow {
-    width: 18px;
-    height: 18px;
-    border: 1px solid #6f6f6f;
-    border-radius: 50%;
-    text-align: center;
-    line-height: 18px;
-    vertical-align: middle;
-} 
-.icon span {
-    padding-left: 10px;
+.icon a{
+    padding: 0 20px;
 }
-/* /navbar */
-.container {
-    width: calc(100% - 300px);
-    padding: 100px 20px 0 20px;
-    overflow-y: auto;
-}
+/*-------------------------
+  navbar-section-playlist
+ -------------------------*/
+/*-------------------------
+    navbar-section-down
+ -------------------------*/
 .navbar-section-down {
     margin-top: auto;
     margin-bottom: 10px;
@@ -137,10 +162,40 @@ main {
 .navbar-section-user span {
     padding-left: 10px;
 }
-.navbar-section-user-search {
-    text-align: left;
+.circle-arrow {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #6f6f6f;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    vertical-align: middle;
+} 
+.download span{
+    font-size: 12px;
 }
-.body-section-navbar {
+.username {
+    color: #fff;
+}
+/*------------------------
+   /navbar-section-down
+-------------------------*/
+/*----------
+   /navbar 
+------------*/
+
+/*------------
+   container 
+ ------------*/
+.container {
+    width: calc(100% - 300px);
+    padding: 100px 20px 0 20px;
+    overflow-y: auto;
+}
+/*-------------------------
+    body-section-navbar
+ -------------------------*/
+ .body-section-navbar {
     display: flex;
     justify-content: center;
 }
@@ -153,28 +208,6 @@ main {
 .navbar-body, .user-selection {
     display: flex;
 }
-.download span{
-    font-size: 12px;
-}
-.user-icon {
-    width: 25px;
-    height: 25px;
-    background-color: grey;
-    border-radius: 50%
-}
-.username {
-    color: #fff;
-}
-.icon a{
-    padding: 0 20px;
-}
-.navbar-section-user-search div:hover {
-    color: #fff;
-    border-left: 3px solid lightgreen;
-}
-.navbar-section-user-search div.active {
-    border-left: 3px solid lightgreen;
-}
 .navbar-body div:hover a{
     color: #fff;
     border-bottom: 3px solid lightgreen;
@@ -182,8 +215,14 @@ main {
 .navbar-body div a.active {
     border-bottom: 3px solid lightgreen;
 }
-.icon-1 a.active {
-    border-left: 3px solid lightgreen;
+ /*-------------------------
+    /body-section-navbar
+ -------------------------*/
+.user-icon {
+    width: 25px;
+    height: 25px;
+    background-color: grey;
+    border-radius: 50%
 }
 .navbar-section-playlist li:hover a {
     color: #fff;
@@ -271,6 +310,9 @@ main {
 .circle-cover img {
     border-radius: 50%;
 }
+/*------------
+   /container 
+ ------------*/
 /*---------- 
    footer
 ---------- */
