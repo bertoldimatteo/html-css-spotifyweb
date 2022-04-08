@@ -452,7 +452,7 @@ main {
         display: none;
     }
     .navbar-section-user-search svg {
-        width: 60%;
+        width: 50%;
     }
     .navbar-section-playlist {
         display: none;
@@ -469,7 +469,7 @@ main {
     .navbar-user-account {
         text-align: center;
     }
-    .navbar-section-logo, .navbar-section-user-search, .navbar-section-playlist, .navbar-section-user  {
+    .navbar-section-logo, .navbar-section-playlist, .navbar-section-user  {
         padding: 0 10px;
     }
     .playlist-bar {
