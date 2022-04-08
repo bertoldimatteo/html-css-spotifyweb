@@ -170,7 +170,12 @@ main {
 }
 .navbar-body div:hover a{
     color: #fff;
+    border-bottom: 3px solid lightgreen;
 }
+.navbar-body div a.active {
+    border-bottom: 3px solid lightgreen;
+}
+
 .navbar-section-playlist li:hover a {
     color: #fff;
 }
